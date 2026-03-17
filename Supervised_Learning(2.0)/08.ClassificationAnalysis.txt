@@ -1,0 +1,55 @@
+### CLASSIFICATION ALGORITHM :
+
+The classification algorithm is used to identify the category of new observations on the basis of training data.
+
+in classification a program learns from the given dataset or observation and then classifies new observavtion into a nu,ber of classes or groups.
+
+Such as yes no , 0,1 Spamor Not Spam cat or dog etc. Classes can be called as targets/ labels or categories.
+
+### Types of classifications :
+
+1️⃣ BINARY CLASSIFICATION
+
+Two possible classes
+📌 Examples:
+Yes / No
+0 / 1
+True / False
+
+Algorithms used:
+
+Logistic Regression
+Support Vector Machine (SVM)
+Decision Tree
+K-Nearest Neighbors (KNN)
+
+2️⃣ MULTICLASS CLASSIFICATION
+
+More than two classes
+📌 Examples:
+
+Handwritten digits (0–9)
+
+Iris flower species (Setosa, Versicolor, Virginica)
+
+Algorithms used:
+
+Decision Tree
+Random Forest
+Naive Bayes
+Softmax Regression
+
+### LINEAR ALGORITHM : Logistic regression , SVM
+
+### NON LINEAR MODEL : k nearest neighbour ,
+                       svm ,  
+                       Naive Bayes ,
+                       Decision Tree classification ,
+                       Random Forest classification
+
+### EVALUATING A CLASSIFICATION MODEL :
+
+. log loss or Cross Entropy loss
+. Confusion Matrix
+. AUC-ROC curve
+

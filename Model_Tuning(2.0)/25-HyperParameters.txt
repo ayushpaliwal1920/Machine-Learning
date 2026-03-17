@@ -1,0 +1,11 @@
+Model Parameter :  
+    Model parameters are configuration variables that are internal to the model and model learns them on its own.
+
+HyperParameters :  
+    are those parameters that are explicitly defined by the user to control the learning process.
+    the best value can be determined either by the rule of thumb or by trail and error.
+
+Models can have many hyperparameters and finding the best combination of parameters can be treated as a search problem .The two best Strategies for HyperParameter tuning are :
+
+1. GridSearchCV
+2. RandomizedSearchCV

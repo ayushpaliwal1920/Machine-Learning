@@ -1,0 +1,39 @@
+######## ENSEMBLE LEARNING ################
+
+Ensemble learning improves machine learning results by combining multiple base models (weak learners) to create a single, superior predictive model. By aggregating diverse models, this approach reduces overfitting, lowers variance, and decreases bias, resulting in more robust and accurate predictions than any single model.
+
+
+The Ensemble methods in machine learning combines the insights obtained from multiplr learning models to facilitate accurate and imporoved decisions.
+
+
+########### TYPES OF ENSEMBLE LEARNING ##########
+
+1️⃣ Bagging (Bootstrap Aggregating)
+
+2️⃣ Boosting
+
+
+### BASIC ENSEMBLE TECHNIQUES  :
+
+1. MAX VOTING 
+2. VOTING 
+3. WEIGHTED AVERAGE
+
+### ADVANCED ENSEMBLE LEARNING :
+
+. STACKING
+. BLENDING 
+. BAGGING 
+. BOOSTING 
+
+### ALGORITHM BASED ON BAGGING AND BOOSTING :
+
+. BAGGING ALGO : Bagging meta-estimator 
+                 Random Forest
+
+. BOOSTING ALGORITHM : AdaBoost
+                       GBM
+                       XGBM
+                       LIGHT GBM
+                       CatBoost
+
