@@ -1,0 +1,28 @@
+##### ASSOCIATION RULE LEARNING ######
+
+Association rule learning is a machine learning technique used to discover interesting relationships or pattern in large datasets,
+
+It is often applied to transactional data , where items are bought or used together.
+
+a rule-based machine learning method used to discover interesting, hidden relationships (rules) between variables in large datasets. 
+It identifies patterns in the form "if-then" (), commonly used in market basket analysis to determine items frequently bought together.
+ Key metrics to evaluate these rules include Support, Confidence, and Lift
+
+
+Association rule learning work : 
+
+1. Support  , 
+
+2. Confidence , 
+
+3. Lift
+
+##### TYPES OF ASSOCIATION RULE LEARNING ########
+
+1 . Apriori
+
+2 . Eclat 
+
+3 . F-P Growth Algorithm 
+
+gfg

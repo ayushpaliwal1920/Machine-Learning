@@ -1,0 +1,225 @@
+### REGRESSION ANALYSIS :
+
+When outcome is in continuous in nature then we uses Regression Analysis
+Regression analysis is a statistical and machine learning technique used to model the relationship between:
+
+^ Dependent variable (target / output) → usually continuous
+
+^ Independent variables (features / inputs)
+
+👉 Goal: predict values, understand relationships, or estimate impact of variables.
+
+
+
+^ When to Use Regression Analysis
+
+Use regression when:
+
+✅ Target variable is continuous
+✅ You want to predict a numeric value
+✅ You want to measure impact of features
+✅ You want interpretability (coefficients matter)
+
+
+
+^ Don’t use regression when:
+
+Target is categorical → use classification
+Relationship is extremely complex and non-numeric without feature engineering 
+
+
+
+### TYPES OF REGRESSION ANALYSIS ==>
+
+(Part 1) : Linear Algorithm :: when input and output is in linear relationship then algorithms are called linear.
+                            examples - Linear Regression , Multi linear Regression , Lasso regression , Ridge Regression.
+
+(Part 2) : Non Linear Algorithm :: when there is non linear relationship between the input ans output.
+                            examples - Polynomial Regression , Decission tree regression , Random Forest Regression , Support Vector machine , K nearest Neighbour
+
+
+### SIMPLE LINEAR REGRESSION ==>
+ 
+ Simple Linear Regression is a method to find a straight line that shows how one thing depends on another.
+How many variables
+One input (X) → independent variable
+One output (Y) → dependent variable
+.Regeression line = y = mx +c
+
+When it works well :
+
+✔ Relationship looks like a straight line
+✔ Data is not very noisy
+✔ No extreme outliers
+
+When it does NOT work well
+
+ Relationship is curved
+ Too many outliers
+ One X cannot explain Y
+
+
+### MULTIPLE LINEAR LINEAR REGRESSION ==>
+
+Multiple Linear Regression is used when one output depends on more than one input.
+Salary depends on Experience + Age
+House price depends on Size + Location + Rooms
+It draws a straight line relationship between each input and the output together.
+equation : y = m1x1 +  m2x2 + ... + c
+
+When it works well
+
+✔ Relationship is roughly linear
+✔ Inputs are not strongly related to each other
+✔ Data is clean
+
+When it does NOT work well
+
+ Inputs are highly related (multicollinearity)
+ Relationship is curved
+ Too many useless inputs
+
+
+ ### POLYNOMIAL REGRESSION ==>
+
+Polynomial Regression is used when:
+Data does not follow a straight line
+The relationship is curved
+It is an extension of Linear Regression, not a new algorithm.
+
+Why we need it :
+
+Simple / Multiple Linear Regression:
+Works only for straight-line relationships
+Polynomial Regression:
+Works for curved relationships
+
+When to use Polynomial Regression :
+
+✔ Data shows curve
+✔ Linear model underfits
+✔ Relationship changes over time
+ 
+ When NOT to use it :
+
+ Very high degree (overfitting)
+ Small dataset + large degree
+ No clear curve.
+
+
+ ### COST FUNCTION ==>
+
+ A cost function tells us how bad or good our model is performing.
+ It measures how wrong the model’s predictions are.
+
+ Lower cost = Better model
+ Higher cost = Worse model
+
+Why Do We Need a Cost Function?
+
+A machine learning model:
+Makes predictions
+But initially, predictions are not accurate
+
+So we need:
+A number that tells us how wrong the model is
+A way to compare different models
+A guide to improve the model
+That number comes from the cost function.
+
+Loss Function :
+
+A loss function measures error for ONE single data point.
+
+Cost Function :
+
+A cost function measures the average error over ALL data points.
+and it gives a best fit line.
+
+### TYPES OF COST FUNCTION ==>
+                            Regression Cost Function.
+                            classification Cost function.
+
+1. REGRESSION COST FUNCTION :
+            
+  Regression models are used to make a prediction for the continuous variables.
+  . MSE(Mean Square Error)
+  . RMSE(Root Mean square Error)
+  . MAE(Mean Absolute Error)
+  . R^2 Accuracy
+
+2. CLASSIFICATION COST FUNCTION :
+
+    # BINARY CLASSIFICATION COST FUNCTION -
+      Classification models are used to make predictions of categorical variables, such as predictions for 0 or 1 , Cat or dog etc.
+
+    # MULTI CLASS CLASSIFICATION COST FUNCTION -
+      A multiclass classification cost function is used in the classification problem for which instances are allocated to one of more than two classes.
+
+
+### REGRESSION COST FUNCTIONS ==>
+
+1. MEAN SQUARE ERROR(MSE) : 
+                          Mean squared error is the mean squared difference between the actual and predicted values. MSE penalizes high errors caused by outliers by squaring the errors.
+
+                          Mean squared error is also know as L2 loss.
+
+                          Mean squared error = formula on net
+
+            Limitations : Not Robust for Real-World Noisy Data , Strongly affected by outliers ,Difficult to interpret due to squared units
+
+2. MEAN ABSOLUTE ERROR(MAE) : 
+                           Mean Absolute error (MAE ) is the mean absolute difference between the actual values and the predicted values.
+
+                           mae is more robust to outliers.The insenstivity to outliers is because it does not penalize high errors caused by outliers.
+
+                          Why Absolute Value?
+
+                            Positive and negative errors cancel each other
+
+                            Absolute value avoids cancellation
+
+                            Focuses on error magnitude only
+
+                           formula = google
+
+            Limitations : Not Differentiable at Zero ❌ (MOST IMPORTANT)
+                          Slower Convergence During Training
+                          Treats All Errors Equally
+                          Not the Best Choice for Deep Learning.
+
+3. ROOT MEAN ABSOLUTE ERROR : “On average, how far are predictions from actual values?”
+                         Root mean squared error is the root squared mean of the difference between actual and predicted values.
+                         Rmse can be used in situations where we want to penalize high errors but not as much as mse does 
+
+                         Why Square the Errors?
+                          Reasons:
+
+                          Removes negative sign
+
+                          Penalizes large errors heavily
+
+                          Makes loss smooth and differentiable
+
+            Limitations :
+                        Highly Sensitive to Outliers
+                        Assumes Normally Distributed Errors
+                        Harder to Interpret Than MAE
+                        Can Mislead Model Comparison
+
+### HOW TO FIND BEST FIT LINE =>  google 
+
+
+### REGULARIZATIONN TECHNIQUES :
+
+                         Regularization is a technique used to prevent overfitting by adding a penalty to the model for being too complex.
+                         Model learns too much from training data → overfitting
+
+                         Regularization controls model complexity
+
+                         Helps the model generalize well on new data 
+
+1. L1 REGULARIZATION : Adds absolute value of weights as penalty , GFG
+2. RIDGE REGULARIZATION : Adds square of weights as penalty , GFG
+
+
